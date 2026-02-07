@@ -9,19 +9,24 @@
   <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
         method="POST">
 
+    <!-- Salesforce Org ID -->
     <input type="hidden" name="oid" value="00DdL00000D47tL">
+
+    <!-- Redirect AFTER submit -->
+    <input type="hidden" name="retURL"
+           value="https://ankitpatidar744.github.io/salesforce-integration/">
 
     First Name:<br>
     <input type="text" name="first_name"><br><br>
 
     Last Name:<br>
-    <input type="text" name="last_name"><br><br>
+    <input type="text" name="last_name" required><br><br>
 
     Email:<br>
     <input type="email" name="email"><br><br>
 
     Company:<br>
-    <input type="text" name="company"><br><br>
+    <input type="text" name="company" required><br><br>
 
     <input type="submit" value="Submit">
   </form>
